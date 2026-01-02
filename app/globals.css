@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Warm, calm palette (no harsh white/black) */
+:root {
+  --sand: 36 45% 94%;
+  --oat: 34 30% 90%;
+  --clay: 28 20% 84%;
+
+  --ink: 26 22% 18%;
+  --muted: 26 10% 35%;
+
+  --sage: 115 16% 38%;
+  --olive: 96 14% 30%;
+  --dusty-blue: 205 18% 44%;
+
+  --terracotta: 18 48% 52%;
+  --honey: 36 64% 55%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(1200px 800px at 20% 10%, hsl(var(--oat)), transparent 60%),
+    radial-gradient(900px 700px at 80% 0%, hsl(var(--sand)), transparent 55%),
+    linear-gradient(180deg, hsl(var(--sand)), hsl(var(--oat)));
+  color: hsl(var(--ink));
+}
+
+/* nicer selection */
+::selection {
+  background: hsl(var(--honey) / 0.35);
+}
+
+/* utility for short line lengths */
+.prose-width {
+  max-width: 62ch;
+}

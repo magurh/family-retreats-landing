@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" fill="none">
+  <defs>
+    <linearGradient id="g3" x1="40" y1="30" x2="180" y2="190" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DCEBD4"/>
+      <stop offset="0.55" stop-color="#93BF95"/>
+      <stop offset="1" stop-color="#4E7E58"/>
+    </linearGradient>
+    <radialGradient id="h3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(100 70) rotate(52) scale(120 90)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.36"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- elongated leaf -->
+  <path d="M174 34C132 28 96 48 74 78C52 108 38 148 56 176C74 204 116 194 148 162C180 130 202 86 194 56C190 41 184 36 174 34Z"
+        fill="url(#g3)"/>
+  <path d="M174 34C132 28 96 48 74 78C52 108 38 148 56 176C74 204 116 194 148 162C180 130 202 86 194 56C190 41 184 36 174 34Z"
+        fill="url(#h3)"/>
+
+  <path d="M66 180C96 142 130 110 188 52" stroke="#2A442F" stroke-opacity="0.30" stroke-width="4" stroke-linecap="round"/>
+  <path d="M104 138C92 128 80 118 70 106" stroke="#2A442F" stroke-opacity="0.18" stroke-width="3" stroke-linecap="round"/>
+  <path d="M134 106C122 96 110 84 100 72" stroke="#2A442F" stroke-opacity="0.16" stroke-width="3" stroke-linecap="round"/>
+</svg>

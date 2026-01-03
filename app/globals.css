@@ -2,21 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Warm, calm palette (no harsh white/black) */
+/* Dark green, calm palette (no harsh black) */
 :root {
-  --sand: 36 45% 94%;
-  --oat: 34 30% 90%;
-  --clay: 28 20% 84%;
+  /* “surfaces” */
+  --sand: 156 34% 9%;   /* deep evergreen */
+  --oat: 154 28% 12%;   /* slightly lighter */
+  --clay: 152 18% 16%;  /* card depth / separators */
 
-  --ink: 26 22% 18%;
-  --muted: 26 10% 35%;
+  /* “text” */
+  --ink: 42 35% 92%;    /* warm off-white */
+  --muted: 38 15% 72%;  /* muted warm grey */
 
-  --sage: 115 16% 38%;
-  --olive: 96 14% 30%;
-  --dusty-blue: 205 18% 44%;
+  /* accents */
+  --sage: 132 20% 55%;
+  --olive: 112 16% 46%;
+  --dusty-blue: 205 18% 62%;
 
-  --terracotta: 18 48% 52%;
-  --honey: 36 64% 55%;
+  --terracotta: 18 55% 56%;
+  --honey: 36 75% 58%;
 }
 
 html,
@@ -25,18 +28,92 @@ body {
 }
 
 body {
-  background: radial-gradient(1200px 800px at 20% 10%, hsl(var(--oat)), transparent 60%),
-    radial-gradient(900px 700px at 80% 0%, hsl(var(--sand)), transparent 55%),
+  position: relative;
+
+  /* deep green atmosphere */
+  background:
+    radial-gradient(1200px 800px at 20% 10%, hsl(var(--oat)), transparent 60%),
+    radial-gradient(900px 700px at 85% 0%, hsl(var(--clay)), transparent 55%),
     linear-gradient(180deg, hsl(var(--sand)), hsl(var(--oat)));
   color: hsl(var(--ink));
 }
 
 /* nicer selection */
 ::selection {
-  background: hsl(var(--honey) / 0.35);
+  background: hsl(var(--honey) / 0.30);
 }
 
 /* utility for short line lengths */
 .prose-width {
   max-width: 62ch;
+}
+
+/* Floating leaves layer (fixed so you always see it) */
+.leaf-layer {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.leaf {
+  position: absolute;
+  left: var(--left, 10vw);
+  top: -15vh;
+  animation: leaf-fall var(--dur, 20s) linear infinite;
+  animation-delay: var(--delay, 0s);
+  will-change: transform;
+}
+
+.leaf__inner {
+  width: var(--size, 44px);
+  height: var(--size, 44px);
+  opacity: var(--op, 0.45);
+  transform-origin: center;
+  animation: leaf-wobble var(--wobbleDur, 7s) ease-in-out infinite;
+  will-change: transform;
+
+  /* helps pop against dark green */
+  filter:
+    drop-shadow(0 10px 18px rgba(0, 0, 0, 0.35))
+    blur(var(--blur, 0px))
+    saturate(1.08);
+}
+
+.leaf__inner img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Drift down + sideways */
+@keyframes leaf-fall {
+  from {
+    transform: translate3d(0, -20vh, 0);
+  }
+  to {
+    transform: translate3d(var(--dx, 10vw), 115vh, 0);
+  }
+}
+
+/* Gentle rotation + tiny sway */
+@keyframes leaf-wobble {
+  0% {
+    transform: rotate(0deg) translateX(0);
+  }
+  50% {
+    transform: rotate(var(--rot, 18deg)) translateX(10px);
+  }
+  100% {
+    transform: rotate(0deg) translateX(0);
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .leaf,
+  .leaf__inner {
+    animation: none !important;
+  }
 }

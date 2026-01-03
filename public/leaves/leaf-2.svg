@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" fill="none">
+  <defs>
+    <linearGradient id="g2" x1="30" y1="40" x2="190" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D7E7CF"/>
+      <stop offset="0.55" stop-color="#8DBA8F"/>
+      <stop offset="1" stop-color="#4B7A55"/>
+    </linearGradient>
+    <radialGradient id="h2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(95 75) rotate(45) scale(120 90)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- a slightly rounder leaf -->
+  <path d="M158 46C132 30 90 36 66 64C42 92 34 132 52 160C70 188 114 190 150 160C186 130 198 90 182 62C175 50 166 48 158 46Z"
+        fill="url(#g2)"/>
+  <path d="M158 46C132 30 90 36 66 64C42 92 34 132 52 160C70 188 114 190 150 160C186 130 198 90 182 62C175 50 166 48 158 46Z"
+        fill="url(#h2)"/>
+
+  <path d="M58 168C86 134 118 106 176 58" stroke="#2B4631" stroke-opacity="0.32" stroke-width="4" stroke-linecap="round"/>
+  <path d="M92 140C78 132 68 124 60 114" stroke="#2B4631" stroke-opacity="0.20" stroke-width="3" stroke-linecap="round"/>
+  <path d="M118 116C104 108 92 98 82 86" stroke="#2B4631" stroke-opacity="0.18" stroke-width="3" stroke-linecap="round"/>
+</svg>

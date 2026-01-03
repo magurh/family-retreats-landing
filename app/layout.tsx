@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { DM_Sans, Libre_Baskerville } from "next/font/google";
+import FloatingLeaves from "@/components/FloatingLeaves";
 
 const sans = DM_Sans({
   subsets: ["latin"],
@@ -28,7 +29,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${sans.variable} ${serif.variable}`}>
-      <body className="font-[var(--font-sans)] antialiased">{children}</body>
+      <body className="font-[var(--font-sans)] antialiased">
+        <FloatingLeaves />
+        <div className="relative z-10">{children}</div>
+      </body>
     </html>
   );
 }

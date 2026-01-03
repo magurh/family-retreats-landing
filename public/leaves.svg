@@ -1,0 +1,36 @@
+<svg width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="p" width="300" height="300" patternUnits="userSpaceOnUse">
+      <!-- gentle stems -->
+      <path d="M70 260 C85 210, 105 175, 135 140 C170 100, 210 80, 250 70"
+            stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="2" stroke-linecap="round"/>
+      <path d="M230 285 C210 230, 180 200, 150 170 C120 140, 95 120, 60 95"
+            stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- leaf clusters -->
+      <path d="M140 135 C120 120, 95 120, 85 140 C100 160, 125 165, 140 135 Z"
+            stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2" fill="none"/>
+      <path d="M165 110 C150 90, 125 85, 110 100 C120 125, 145 130, 165 110 Z"
+            stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="2" fill="none"/>
+      <path d="M205 90 C190 70, 165 65, 150 80 C160 105, 185 110, 205 90 Z"
+            stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="2" fill="none"/>
+
+      <path d="M95 205 C70 200, 55 215, 60 235 C85 245, 105 230, 95 205 Z"
+            stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="2" fill="none"/>
+      <path d="M120 185 C95 170, 75 175, 70 195 C90 215, 115 210, 120 185 Z"
+            stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="2" fill="none"/>
+
+      <path d="M240 75 C225 55, 200 55, 190 75 C205 95, 230 100, 240 75 Z"
+            stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="2" fill="none"/>
+      <path d="M255 110 C235 95, 215 100, 210 120 C230 140, 255 135, 255 110 Z"
+            stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="2" fill="none"/>
+
+      <!-- tiny dots for texture -->
+      <circle cx="260" cy="210" r="2" fill="#FFFFFF" fill-opacity="0.10"/>
+      <circle cx="90" cy="60" r="2" fill="#FFFFFF" fill-opacity="0.10"/>
+      <circle cx="40" cy="250" r="2" fill="#FFFFFF" fill-opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="900" fill="url(#p)"/>
+</svg>

@@ -17,8 +17,8 @@ export default {
         honey: "hsl(var(--honey) / <alpha-value>)"
       },
       boxShadow: {
-        soft: "0 10px 30px rgba(36, 30, 24, 0.08)",
-        softer: "0 8px 24px rgba(36, 30, 24, 0.06)"
+        soft: "0 14px 40px rgba(0, 0, 0, 0.35)",
+        softer: "0 10px 28px rgba(0, 0, 0, 0.25)"
       },
       borderRadius: {
         xl2: "1.25rem"

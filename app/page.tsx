@@ -12,7 +12,6 @@ import {
 } from "lucide-react";
 
 import WaitlistForm from "@/components/WaitlistForm";
-import FloatingLeaves from "@/components/FloatingLeaves";
 
 function Container({ children }: { children: ReactNode }) {
   return <div className="mx-auto w-full max-w-6xl px-6">{children}</div>;
@@ -128,7 +127,6 @@ function HelpCard({
 export default function Page() {
   return (
     <div className="relative pb-20 overflow-hidden">
-      <FloatingLeaves />
 
       <div className="relative z-10">
         {/* Top nav */}
@@ -137,7 +135,7 @@ export default function Page() {
             <div className="flex items-center justify-between">
               <Link href="/" className="group inline-flex items-baseline gap-3">
                 <span className="font-[var(--font-serif)] text-2xl text-ink">
-                  Golden Retreats
+                  Let's Gather Retreats
                 </span>
                 <span className="hidden text-sm text-muted sm:inline">
                   Time together. Memories forever.

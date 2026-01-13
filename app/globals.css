@@ -67,8 +67,8 @@ body {
 }
 
 .leaf__inner {
-  width: var(--size, 44px);
-  height: var(--size, 44px);
+  width: calc(var(--size, 10px) * 0.1);
+  height: calc(var(--size, 10px) * 0.1);
   opacity: var(--op, 0.45);
   transform-origin: center;
   animation: leaf-wobble var(--wobbleDur, 7s) ease-in-out infinite;
@@ -116,4 +116,8 @@ body {
   .leaf__inner {
     animation: none !important;
   }
+}
+
+.leaf-layer {
+  display: none !important;
 }

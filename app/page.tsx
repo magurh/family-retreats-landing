@@ -185,9 +185,7 @@ export default function Page() {
                 </h1>
 
                 <p className="mt-5 text-base leading-relaxed text-muted prose-width">
-                  A holiday where you don’t have to “hold it all.” Shared meals, simple
-                  rhythms, kids’ activities with care, and space for the grown-ups to
-                  exhale.
+                  Family time, without the mental load — just space to slow down, eat well, and be together.
                 </p>
 
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -204,10 +202,6 @@ export default function Page() {
                     About us
                   </Link>
                 </div>
-
-                <p className="mt-6 text-sm text-muted">
-                  Not a “hustle holiday.” Just calm days you’ll actually remember.
-                </p>
               </div>
 
               <div className="relative">
@@ -292,32 +286,27 @@ export default function Page() {
             <Container>
               <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
                 <div className="order-2 lg:order-1">
-                  <div className="rounded-[2rem] border border-ink/10 bg-sand/55 p-8 shadow-softer">
-                    <p className="text-base leading-relaxed text-muted prose-width">
-                      Whether we’re hosting you on one of our fully inclusive family
-                      retreats or supporting you behind the scenes with planning and
-                      coordination, our role is the same:
-                    </p>
-
-                    <div className="mt-6 space-y-4">
-                      {[
-                        "We help you find the right place to stay",
-                        "We organise catering and food options",
-                        "We plan gentle, optional activities",
-                        "We think through the details so you don’t have to"
-                      ].map((line) => (
-                        <div key={line} className="flex gap-3">
-                          <span className="mt-1.5 h-2 w-2 flex-none rounded-full bg-sage/70" />
-                          <p className="text-sm leading-relaxed text-muted">{line}</p>
-                        </div>
-                      ))}
-                    </div>
-
-                    <p className="mt-6 text-sm leading-relaxed text-muted prose-width">
-                      From start to finish, we remove the stress of organising —
-                      without the crowds or impersonal feel of big all-inclusive
-                      resorts.
-                    </p>
+                  <div className="grid gap-4">
+                    <Card
+                      title="The right place to stay"
+                      text="We help you choose accommodation that fits your family and your rhythm."
+                      icon={<CalendarDays className="h-5 w-5" />}
+                    />
+                    <Card
+                      title="Catering & food options"
+                      text="We organise meals and food options—so nobody spends the holiday cooking or shopping."
+                      icon={<UtensilsCrossed className="h-5 w-5" />}
+                    />
+                    <Card
+                      title="Gentle, optional activities"
+                      text="Light structure that supports rest: nature, wellbeing, and simple family moments."
+                      icon={<Sparkles className="h-5 w-5" />}
+                    />
+                    <Card
+                      title="Details handled"
+                      text="We think through the logistics so you don’t have to manage everything."
+                      icon={<Heart className="h-5 w-5" />}
+                    />
                   </div>
                 </div>
 
@@ -325,8 +314,27 @@ export default function Page() {
                   <SectionTitle
                     eyebrow="What we do"
                     title="Thoughtful planning, gentle structure, real rest."
-                    subtitle="We take care of the practical details so your family can focus on being together."
                   />
+                    <p className="mt-6 text-base leading-relaxed text-muted prose-width">
+                      Whether we're hosting you on one of our fully inclusive family
+                      retreats or supporting you behind the scenes with planning and
+                      coordination, our role is the same.
+                    </p>
+                    <p className="mt-6 text-base leading-relaxed text-muted prose-width">
+                      From start to finish, we remove the stress of organising —
+                      without the crowds or impersonal feel of big all-inclusive
+                      resorts.
+                    </p>
+                    <div className="mt-8 overflow-hidden rounded-[2rem] border border-ink/10 bg-sand/40 shadow-soft">
+                      <div className="relative aspect-[16/10] w-full">
+                        <Image
+                          src="/hero.jpg"
+                          alt="A calm family moment in nature"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </div>
                 </div>
               </div>
             </Container>
@@ -360,7 +368,7 @@ export default function Page() {
 
                 <HelpCard
                   eyebrow="Family reunion planning & holiday support"
-                  title="Keep the time together. We handle the planning."
+                  title="We plan it. You enjoy the time together."
                   description="For families who want to gather together but don’t want the stress of organising it."
                   bullets={[
                     "Sourcing and booking suitable accommodation",
@@ -405,34 +413,14 @@ export default function Page() {
                   </p>
                 </div>
 
-                <div className="rounded-[2rem] border border-ink/10 bg-sand/55 p-8 shadow-softer">
-                  <div className="space-y-5 text-base leading-relaxed text-muted prose-width">
-                    <p>
-                      What we wanted was simple: a calm place to stay, great food,
-                      thoughtful service, time to walk, move, rest, and reconnect —
-                      without overspending or managing everything ourselves.
-                    </p>
-                    <p className="text-ink/90">When we couldn’t find it, we decided to create it.</p>
-                    <p>
-                      Everything we offer is shaped by that experience — designed by
-                      parents, for families, with care, practicality, and real life in
-                      mind.
-                    </p>
-                  </div>
-
-                  <div className="mt-8 flex flex-wrap gap-2">
-                    <Pill>
-                      <Heart className="h-4 w-4 text-terracotta" />
-                      Care + practicality
-                    </Pill>
-                    <Pill>
-                      <Leaf className="h-4 w-4 text-sage" />
-                      Calm, nature-first
-                    </Pill>
-                    <Pill>
-                      <Baby className="h-4 w-4 text-blue" />
-                      Family-friendly by default
-                    </Pill>
+                <div className="mt-8 overflow-hidden rounded-[2rem] border border-ink/10 bg-sand/40 shadow-soft">
+                  <div className="relative aspect-[16/10] w-full">
+                    <Image
+                      src="/hero.jpg"
+                      alt="A calm family moment in nature"
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                 </div>
               </div>
@@ -443,7 +431,7 @@ export default function Page() {
           <section className="mt-20" id="say">
             <Container>
               <SectionTitle
-                eyebrow="What families say"
+                eyebrow="Testimonials"
                 title="What families say"
                 subtitle="A few early words from trial stays—and the feeling we’re building toward."
               />
@@ -505,7 +493,7 @@ export default function Page() {
             <Container>
               <div className="flex flex-col items-start justify-between gap-6 border-t border-ink/10 py-10 sm:flex-row sm:items-center">
                 <div>
-                  <p className="font-[var(--font-serif)] text-lg text-ink">Golden Retreats</p>
+                  <p className="font-[var(--font-serif)] text-lg text-ink">Let's Gather Retreats</p>
                   <p className="mt-1 text-sm text-muted">
                     Time together. Memories forever.
                   </p>

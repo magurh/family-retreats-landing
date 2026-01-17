@@ -509,7 +509,7 @@ export default function Page() {
                     About
                   </Link>
                   <Link href="#say" className="text-muted hover:text-ink">
-                    Families say
+                    Testimonials
                   </Link>
                   <Link href="#waitlist" className="text-muted hover:text-ink">
                     Waitlist

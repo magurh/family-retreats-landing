@@ -144,7 +144,7 @@ export default function Page() {
 
               <div className="flex items-center gap-3">
                 <Link
-                  href="#help"
+                  href="/retreats"
                   className="hidden rounded-full border border-ink/10 bg-sand/60 px-4 py-2 text-sm font-semibold text-ink shadow-sm transition hover:bg-sand sm:inline-flex"
                 >
                   View upcoming retreats
@@ -190,7 +190,7 @@ export default function Page() {
 
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
                   <Link
-                    href="#help"
+                    href="/retreats"
                     className="inline-flex items-center justify-center gap-2 rounded-xl bg-terracotta px-5 py-3 text-base font-semibold text-sand shadow-soft transition hover:translate-y-[-1px]"
                   >
                     View upcoming retreats <ArrowRight className="h-5 w-5" />
